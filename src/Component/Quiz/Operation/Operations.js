@@ -1,11 +1,11 @@
 //Calculating Score...
 export const calculateScore = (userAnswers,question)=>{
     const correctAnswers=question.map((question)=>question.answer);
-    console.log(correctAnswers);
+ 
     let score =0;
 
     for(const questionId in userAnswers)
-    { console.log(questionId);
+    { 
       if(userAnswers[questionId] === correctAnswers[questionId - 1])
         {
           score++;
